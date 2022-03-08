@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "data" {
   # bucket is not encrypted
   # bucket does not have access logs
   # bucket does not have versioning
-  bucket        = "bc-yusuf-drift-test3"
+  bucket        = "bc-yusuf-drift-test4"
   force_destroy = true
 
   versioning {

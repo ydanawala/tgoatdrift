@@ -9,15 +9,13 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-
+        with:
+          fetch-depth: 0
+      - name: Run yor action
+        uses: bridgecrewio/yor-action@main
+        
       - name: Run Bridgecrew 
         id: Bridgecrew
         uses: bridgecrewio/bridgecrew-action@master 
         with:
           api-key: ${{ secrets.BC_API_KEY }}
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Run yor action
-        uses: bridgecrewio/yor-action@main

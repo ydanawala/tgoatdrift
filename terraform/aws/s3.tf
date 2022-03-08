@@ -10,9 +10,9 @@ resource "aws_s3_bucket" "data" {
     enabled = var.versioning_enabled
   }
   tags = {
-    git_commit           = "4f689e7175e233874c607d70658e0792dbb301b7"
+    git_commit           = "bd38076e3044ddb180f361ba8026a33e4a976206"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2022-03-08 16:53:57"
+    git_last_modified_at = "2022-03-08 17:53:41"
     git_last_modified_by = "ydanawala@gmail.com"
     git_modifiers        = "ydanawala"
     git_org              = "ydanawala"

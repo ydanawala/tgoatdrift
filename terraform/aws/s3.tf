@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "data" {
   force_destroy = true
 
   versioning {
-    enabled = var.versioning_enabled
+    enabled = true
   }
   tags = {
     git_commit           = "bd38076e3044ddb180f361ba8026a33e4a976206"
